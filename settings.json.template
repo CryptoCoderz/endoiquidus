@@ -7,7 +7,7 @@
   // name your instance!
   "title": "EndoV2-Swap ENDO Explorer",
 
-  "address": "127.0.0.1:52233",
+  "address": "127.0.0.1:30080",
 
   // coin name
   "coin": "EndoV2-Swap",
@@ -29,7 +29,7 @@
   "theme": "Flatly",
 
   // port to listen for requests on.
-  "port" : 52233,
+  "port" : 30080,
 
   // database settings (MongoDB)
   "dbsettings": {
