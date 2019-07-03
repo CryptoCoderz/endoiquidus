@@ -47,7 +47,7 @@
   // wallet settings
   "wallet": {
     "host": "localhost",
-    "port": 51221,
+    "port": 55234,
     "user": "endov2swaprpc",
     "pass": "SomeOtherWorldlyPasswordGoesHere1"
   },
