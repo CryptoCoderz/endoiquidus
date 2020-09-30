@@ -297,7 +297,6 @@ router.get('/ext/summary', function(req, res) {
     lib.get_hashrate(function(hashrate) {
       lib.get_connectioncount(function(connections){
         lib.get_blockcount(function(blockcount) {
-          lib.get_masternodecount(function(masternodecount){
           db.get_stats(settings.coin, function (stats) {
             if (hashrate == 'There was an error. Check your console.') {
               hashrate = 0;
@@ -311,7 +310,6 @@ router.get('/ext/summary', function(req, res) {
               connections: connections,
               blockcount: blockcount
             }]});
-          });
           });
         });
       });

@@ -31,7 +31,8 @@ html
             $("#difficultyHybrid").text(json.data[0].difficultyHybrid);
             $("#hashrate").text(json.data[0].hashrate);
             $("#lastPrice").text(json.data[0].lastPrice.toFixed(8));
-            $("#lblConnections").text('| ' + json.data[0].blockcount + ' blocks | ' + json.data[0].masternodecount + ' masternodes | ' + json.data[0].connections + ' connections |');
+            $("#lblConnections").text(json.data[0].connections + ' connections');
+            $("#lblBlockcount").text(json.data[0].blockcount + ' blocks');
             $("#lblX1").text(' ');
           }});
         }
@@ -192,9 +193,6 @@ html
     block content
     .navbar.navbar-default.navbar-fixed-bottom.hidden-xs
       .col-md-4
-        ul.nav.navbar-nav
-          li.pull-left
-           label#lblConnections
         if settings.display.twitter
           ul.nav.navbar-nav
             li.pull-left
